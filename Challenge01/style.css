@@ -1,0 +1,22 @@
+body {
+  background-color: #221727;
+  font-family: 'Viga', sans-serif;
+  padding: 1rem;
+}
+#level-up-text-wrapper {
+  background-color: red;
+  border: 2px solid #5ef4d6;
+  border-radius: 10px;
+  color: white;
+  padding: 2rem;
+}
+#join-learn-a-thon-btn {
+  background-color: #5ef4d6;
+  color: #221727;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+
+  font-size: x-large;
+}
