@@ -6,26 +6,28 @@ body {
 }
 #landing-page {
   background-image: url('/Challenge01/images/mintbean-dome.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--main-color);
   align-items: center;
+  justify-content: baseline;
 }
 
 #learn-a-bit-logo {
   width: auto;
   height: 90%;
-  padding-left: 4rem;
 }
 #navigation {
   display: flex;
   flex-direction: row;
   color: white;
-  padding-right: 4rem;
   margin: 1rem;
 }
 #header-join-btn {
@@ -41,14 +43,17 @@ header {
 }
 
 #level-up-text-wrapper {
+  display: flex;
+  flex-direction: column;
   border: 2px solid #5ef4d6;
   border-radius: 10px;
-  width: 40%;
+  width: 80%;
   color: white;
-  margin: 5rem;
-  padding: 1.5rem;
   background-color: var(--main-color);
   opacity: 80%;
+  justify-self: center;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 #join-learn-a-thon-btn {
@@ -59,8 +64,27 @@ header {
   font-family: r;
   text-align: center;
   padding: 0.5rem 1rem;
-  font-size: large;
+
+  /* font-size: large; */
   font-family: var(--main-font);
 }
 @media screen and (min-width: 720px) {
+  #level-up-text-wrapper {
+    border: 2px solid #5ef4d6;
+    border-radius: 10px;
+    width: 40%;
+    margin: 5rem;
+    padding: 1.5rem;
+  }
+  #join-learn-a-thon-btn {
+    background-color: #5ef4d6;
+    color: #221727;
+    border-radius: 5px;
+    border: 0px;
+    font-family: r;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: large;
+    font-family: var(--main-font);
+  }
 }
