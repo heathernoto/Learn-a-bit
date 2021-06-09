@@ -1,14 +1,26 @@
 body {
   background-color: #221727;
   font-family: 'Viga', sans-serif;
-  padding: 1rem;
+}
+#landing-page {
+  background-image: url('/Challenge01/images/mintbean-dome.png');
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+#logo {
+}
+#navigation {
+  color: white;
 }
 #level-up-text-wrapper {
-  background-color: red;
   border: 2px solid #5ef4d6;
   border-radius: 10px;
   color: white;
   padding: 2rem;
+  margin: 2rem;
 }
 #join-learn-a-thon-btn {
   background-color: #5ef4d6;
@@ -17,6 +29,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   margin-top: 1.5rem;
-
   font-size: x-large;
+}
+@media screen and (min-width: 720px) {
 }
