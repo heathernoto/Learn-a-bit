@@ -5,7 +5,7 @@ body {
   font-family: var(--main-font);
 }
 #landing-page {
-  background-image: url('/Challenge01/images/mintbean-dome.png');
+  background-image: url('images/mintbean-dome.png');
   display: flex;
   flex-direction: column;
   justify-content: center;
