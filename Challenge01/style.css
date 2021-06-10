@@ -19,24 +19,20 @@ header {
   align-items: center;
   justify-content: baseline;
 }
-
 #learn-a-bit-logo {
   width: auto;
   height: 90%;
 }
-#navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: white;
-  margin: 1rem;
-}
-.menu-icon {
+#navigation-mobile #burger {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #5ef4d6;
   margin: 6px 0;
 }
+#navigation-pc {
+  display: none;
+}
+
 #header-join-btn {
   background-color: #5ef4d6;
   color: #221727;
@@ -94,8 +90,25 @@ header {
     font-size: large;
     font-family: var(--main-font);
   }
-  .menu-icon {
-    background-color: var(--main-color);
+
+  #navigation-pc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    margin: 1rem;
+  }
+  #navigation-mobile {
+    display: none;
+  }
+  #burger {
+    display: none;
   }
 }
 /* trying to figure out the burgewr menu */
+/* .menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+} */
