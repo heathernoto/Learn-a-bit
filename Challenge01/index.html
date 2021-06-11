@@ -12,24 +12,33 @@
   </head>
 
   <body>
-    <section id="landing-page">
 
-    <header>
-        <img src="images/learnabit-logo.png" id="learn-a-bit-logo"/>
-        <nav >
-          <div id="navigation-pc">
-          Intro | About | Team | Contact
-            <div><button id="header-join-btn">Join </button></div>
+
+    <header class="landing-page" >
+    <div class="landing-page" >
+      <nav class="navigation">
+          <div class="navigation__img">
+              <img src="images/learnabit-logo.png" id="learn-a-bit-logo"/>
           </div>
-          <div id="navigation-mobile">
-            <div id="burger"></div>
-            <div id="burger"></div>
-            <div id="burger"></div>
+          <ul class="navigation-pc">
+            <li class="navigation-pc__link"><a  alt="Intro Link">Intro</a></li>
+            <li class="navigation-pc__link"><a  alt="About Link">About</a></li>
+            <li class="navigation-pc__link"><a  alt="Team Link">Team</a></li>
+            <li class="navigation-pc__link-last"><a  alt="Contact">Contact</a></li>
+            <li class="navigation-pc__link-last">
+            <button class="navigation-pc__join">Join </button>
+          </li>
+          </ul>
+          <div class="navigation-mobile">
+            <div class="navigation-mobile__burger"></div>
+            <div class="navigation-mobile__burger"></div>
+            <div class="navigation-mobile__burger"></div>
           </div>
         </nav>
-    </header>
 
-    <div id="level-up-text-wrapper">
+
+    <article class="level-up-text-wrapper">
+
       <h2>
       LEVEL UP BIT BY BIT WITH LEARN-A-BIT
       </h2>
@@ -46,9 +55,12 @@
     to use all your resources and
     knowledge to solve each problem.
         </p>
-          <button id="join-learn-a-thon-btn">JOIN A LEARN-A-THON</button>
+        <div>
+          <button class="join-learn-a-thon-btn">JOIN A LEARN-A-THON</button>
+        </div>
+    </article>
     </div>
+  </header>
 
-  </section>
 </body>
 </html>

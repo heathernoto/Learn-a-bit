@@ -1,114 +1,130 @@
-body {
+:root {
   --main-color: #221727;
-  margin: 0;
   --main-font: 'Rubik', sans-serif;
-  font-family: var(--main-font);
+  --transparent-main-color: rgba(34, 23, 39, 0.8);
+  --mint-green: #5ef4d6;
 }
-#landing-page {
-  background-image: url('images/mintbean-dome.png');
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  background-color: grey;
+}
+header {
+  background: url('images/mintbean-dome.png') no-repeat center/cover;
+  height: 100vh;
+}
+.landing-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-header {
+.navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  background-color: var(--main-color);
+  justify-content: space-between;
   align-items: center;
-  justify-content: baseline;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-color);
 }
-#learn-a-bit-logo {
+.navigation__img {
   width: auto;
   height: 90%;
+  padding-left: 2rem;
 }
-#navigation-mobile #burger {
-  width: 35px;
-  height: 5px;
-  background-color: #5ef4d6;
-  margin: 6px 0;
+.navigation-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-right: 3rem;
 }
-#navigation-pc {
+.navigation-mobile__burger {
+  width: 30px;
+  height: 4px;
+  background-color: var(--mint-green);
+  margin: 4px 0;
+}
+.navigation-pc {
   display: none;
 }
 
-#header-join-btn {
-  background-color: #5ef4d6;
-  color: #221727;
-  border-radius: 5px;
-  border: 0px;
-  padding: 0.3rem;
-  text-align: center;
-  font-family: var(--main-font);
-  font-size: large;
-  margin-left: 1rem;
-}
-
-#level-up-text-wrapper {
+.level-up-text-wrapper {
   display: flex;
   flex-direction: column;
-  border: 2px solid #5ef4d6;
+  border: 2px solid var(--mint-green);
   border-radius: 10px;
-  width: 80%;
   color: white;
-  background-color: var(--main-color);
-  opacity: 80%;
+  background-color: var(--transparent-main-color);
   justify-self: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 3rem;
 }
 
-#join-learn-a-thon-btn {
-  background-color: #5ef4d6;
-  color: #221727;
+.join-learn-a-thon-btn {
+  background-color: var(--mint-green);
+  color: var(--main-color);
   border-radius: 5px;
   border: 0px;
-  font-family: r;
+  font-size: larger;
   text-align: center;
   padding: 0.5rem 1rem;
-
-  /* font-size: large; */
   font-family: var(--main-font);
+  width: 100%;
 }
+
 @media screen and (min-width: 720px) {
-  #level-up-text-wrapper {
-    border: 2px solid #5ef4d6;
-    border-radius: 10px;
+  .level-up-text-wrapper {
     width: 40%;
     margin: 5rem;
     padding: 1.5rem;
   }
-  #join-learn-a-thon-btn {
-    background-color: #5ef4d6;
-    color: #221727;
-    border-radius: 5px;
-    border: 0px;
-    font-family: r;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    font-size: large;
-    font-family: var(--main-font);
-  }
 
-  #navigation-pc {
+  .navigation-pc {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     color: white;
-    margin: 1rem;
+    margin: 0.5rem;
   }
-  #navigation-mobile {
+  .navigation-pc__link {
+    color: white;
+    padding: 0.5rem;
+    list-style-type: none;
+    font-size: large;
+    border-right: 1px white solid;
+  }
+  .navigation-pc__link-last {
+    color: white;
+    padding: 0.5rem;
+    list-style-type: none;
+    font-size: large;
+  }
+  .navigation-pc__join {
+    background-color: var(--mint-green);
+    color: var(--main-color);
+    font-size: large;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+    text-align: center;
+  }
+  .navigation-mobile {
     display: none;
   }
-  #burger {
+  .burger {
     display: none;
+  }
+  .join-learn-a-thon-btn {
+    background-color: var(--mint-green);
+    color: var(--main-color);
+    border-radius: 5px;
+    border: 0px;
+    font-size: larger;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    width: 70%;
   }
 }
-/* trying to figure out the burgewr menu */
-/* .menu-icon {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-} */
