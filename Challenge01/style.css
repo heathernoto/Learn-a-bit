@@ -3,6 +3,7 @@
   --main-font: 'Rubik', sans-serif;
   --transparent-main-color: rgba(34, 23, 39, 0.8);
   --mint-green: #5ef4d6;
+  --button-hover: #24e5a3;
 }
 
 body {
@@ -13,6 +14,9 @@ body {
 header {
   background: url('images/mintbean-dome.png') no-repeat center/cover;
   height: 100vh;
+}
+button:hover {
+  background-color: var(--button-hover);
 }
 .landing-page {
   display: flex;
