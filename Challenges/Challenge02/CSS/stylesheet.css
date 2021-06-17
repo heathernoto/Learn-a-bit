@@ -1,0 +1,84 @@
+/* Global
+------------------- */
+:root {
+  --main-maroon: #221727;
+  --main-font: 'Rubik', sans-serif;
+  --transparent-main-color: rgba(34, 23, 39, 0.8);
+  --mint-green: #5ef4d6;
+  --button-hover: #24e5a3;
+  --main-indigo: #4143b1;
+  --title-font: 'Viga', sans-serif;
+  --indigo-shadow: #1f2057;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 2rem;
+  font-family: var(--main-font);
+  background-color: var(--main-indigo);
+}
+h1 {
+  color: var(--mint-green);
+  font: var(--title-font);
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 4px 6px var(--indigo-shadow);
+}
+
+section {
+  background-color: var(--main-maroon);
+  color: white;
+}
+
+/* Details Box
+------------------- */
+.about-details {
+  border: 2px solid #5ef4d6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+/* Image
+------------------- */
+.mintbean-dome {
+  width: 100%;
+  border-radius: 10px;
+}
+/* Text Box
+------------------- */
+.about-details__title {
+  font-family: var(--title-font);
+  line-height: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+.about-details__text {
+  padding: 2rem;
+  line-height: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-weight: 100;
+}
+.about-details__text p {
+  padding: 1rem 0;
+}
+/* Button
+------------------- */
+.join-button {
+  background-color: var(--mint-green);
+  border-style: none;
+  padding: 1rem 2rem;
+  font-family: var(--main-font);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 1rem;
+}

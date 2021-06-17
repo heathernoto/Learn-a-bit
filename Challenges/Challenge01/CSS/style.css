@@ -5,14 +5,20 @@
   --mint-green: #5ef4d6;
   --button-hover: #24e5a3;
 }
-
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: var(--main-font);
   background-color: grey;
 }
 header {
-  background: url('images/mintbean-dome.png') no-repeat center/cover;
+  background: url('../images/mintbean-dome.png') no-repeat center/cover;
   height: 100vh;
 }
 button:hover {
