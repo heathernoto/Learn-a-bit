@@ -82,3 +82,19 @@ section {
   width: 100%;
   margin: 1rem;
 }
+@media screen and (min-width: 720px) {
+  .mintbean-dome {
+    min-height: 100%;
+
+    background-position: center;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .about-details {
+    flex-direction: row;
+  }
+  .about-details__text {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
