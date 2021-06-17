@@ -69,23 +69,24 @@ section {
 }
 .about-details__text p {
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* Button
 ------------------- */
 .join-button {
   background-color: var(--mint-green);
   border-style: none;
-  padding: 1rem 2rem;
+  padding: 1rem;
   font-family: var(--main-font);
   border-radius: 8px;
   font-size: 1.5rem;
   width: 100%;
-  margin: 1rem;
 }
 @media screen and (min-width: 720px) {
   .mintbean-dome {
     min-height: 100%;
-
     background-position: center;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
