@@ -1,14 +1,14 @@
 /* Global
 ------------------- */
 :root {
-  --main-maroon: #221727;
+  --title-font: 'Viga', sans-serif;
   --main-font: 'Rubik', sans-serif;
+  --main-color: #221727;
+  --dark-shadow: #1f2057;
   --transparent-main-color: rgba(34, 23, 39, 0.8);
+  --background-color: #4143b1;
   --mint-green: #5ef4d6;
   --button-hover: #24e5a3;
-  --main-indigo: #4143b1;
-  --title-font: 'Viga', sans-serif;
-  --indigo-shadow: #1f2057;
 }
 *,
 *::before,
@@ -19,83 +19,96 @@
 }
 body {
   margin: 2rem;
+  height: 100vh;
   font-family: var(--main-font);
-  background-color: var(--main-indigo);
+  background-color: var(--background-color);
 }
-h1 {
-  color: var(--mint-green);
+.section-title {
   font: var(--title-font);
   text-align: center;
-  padding-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  text-shadow: 2px 4px 6px var(--indigo-shadow);
+  text-shadow: 2px 4px 6px var(--dark-shadow);
+  padding-bottom: 2rem;
+  color: var(--mint-green);
 }
-
-section {
-  background-color: var(--main-maroon);
-  color: white;
+.about-wrapper {
+  height: 100vh;
 }
 
 /* Details Box
 ------------------- */
 .about-details {
-  border: 2px solid #5ef4d6;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #5ef4d6;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  overflow: hidden;
 }
 /* Image
 ------------------- */
 .mintbean-dome {
   width: 100%;
-  border-radius: 10px;
+  height: auto;
+  overflow: hidden;
 }
 /* Text Box
 ------------------- */
 .about-details__title {
   font-family: var(--title-font);
-  line-height: 1.5rem;
   font-size: 1.75rem;
   font-weight: 200;
+  line-height: 1.5rem;
   line-height: 1.4;
 }
 .about-details__text {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   line-height: 2;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   font-weight: 100;
 }
 .about-details__text p {
-  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem 0;
 }
 /* Button
 ------------------- */
 .join-button {
   background-color: var(--mint-green);
+  color: var(--main-color);
   border-style: none;
   padding: 1rem;
   font-family: var(--main-font);
-  border-radius: 8px;
   font-size: 1.5rem;
-  width: 100%;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
 }
+/* Desktop
+------------------- */
 @media screen and (min-width: 720px) {
-  .mintbean-dome {
-    min-height: 100%;
-    background-position: center;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
   .about-details {
     flex-direction: row;
+    overflow: hidden;
   }
-  .about-details__text {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
+  .mintbean-dome {
+    min-height: 100%;
+    overflow: hidden;
   }
 }
+/*
+declaration order
+1. position
+2. box model
+3. typography
+4. visual
+
+
+whole section make 100vh
+flex 1 makes grow and shrink evenly
+*/
