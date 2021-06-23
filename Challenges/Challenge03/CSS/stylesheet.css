@@ -104,6 +104,7 @@ body {
 }
 
 .team-card__name {
+  height: 5rem;
   font-size: 1.5rem;
   padding-top: 1rem;
   color: var(--mint-green);
@@ -113,6 +114,7 @@ body {
   color: var(--mint-green);
 }
 .team-card__text {
+  height: 10rem;
   padding: 1.5rem;
   font-family: var(--main-color);
   font-weight: 100;
