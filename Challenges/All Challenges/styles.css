@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family: var(--main-font);
   background-color: var(--main-color);
+  padding-bottom: 3rem;
 }
 header {
   display: flex;
@@ -32,13 +33,19 @@ header {
   text-shadow: 2px 4px 6px var(--dark-shadow);
   color: var(--mint-green);
 }
-header a,
-header h2 {
+header h2,
+header a {
   color: white;
   padding: 1rem;
   font-size: 2rem;
   text-align: center;
 }
+.mintbean-link {
+  font-size: 2rem;
+  color: var(--mint-green);
+  padding: 1rem;
+}
+
 p {
   color: white;
   padding: 1rem;
