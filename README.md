@@ -6,3 +6,4 @@ As the name says, the purpose of Learn-a-bit is about learning one bit of code a
 
 [Visit Mintbean for more info...](https://mintbean.io/)
 
+[My deployed challenges](https://heathers-learn-a-bit.netlify.app/)

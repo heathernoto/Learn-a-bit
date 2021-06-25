@@ -33,7 +33,12 @@ header {
   text-shadow: 2px 4px 6px var(--dark-shadow);
   color: var(--mint-green);
 }
-header h2,
+header h2 {
+  color: white;
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
 header a {
   color: white;
   padding: 1rem;
@@ -45,10 +50,18 @@ header a {
   color: var(--mint-green);
   padding: 1rem;
 }
+img {
+  max-width: 80%;
+  align-self: center;
+  padding: 2rem 0rem;
+}
 
 p {
   color: white;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
+}
+a:hover {
+  color: violet;
 }
