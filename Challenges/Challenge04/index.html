@@ -5,11 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mintbean Learn-a-bit Challenge 04 - Contact</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    Have a question about a Learn-a-bit or workshop? Want to speak at one of our
-    events or discuss a potential collaboration? Contact us, we'd love to start
-    a conversation.
+    <h2 class="contact-title">CONTACT US</h2>
+    <article class="contact-wrapper">
+      <summary class="contact-summary">
+        <img class="contact-summary__logo" src="./images/learnabit-logo.png" />
+        <p class="contact-summary__text">
+          Have a question about a Learn-a-bit or workshop? Want to speak at one
+          of our events or discuss a potential collaboration? Contact us, we'd
+          love to start a conversation.
+        </p>
+        <div class="contact-summary__icons">
+          <img
+            class="contact-summary__icon"
+            src="https://img.icons8.com/android/48/5ef4d6/globe.png"
+          />
+
+          <img
+            class="contact-summary__icon"
+            src="https://img.icons8.com/material-sharp/48/5ef4d6/github.png"
+          />
+          <img
+            class="contact-summary__icon"
+            src="https://img.icons8.com/ios-glyphs/60/5ef4d6/linkedin-2.png"
+          />
+
+          <img
+            class="contact-summary__icon"
+            src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
+          />
+        </div>
+      </summary>
+      <form class="contact-form__wrapper">
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          class="contact-form__fields"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          class="contact-form__fields"
+        />
+        <input
+          type="text"
+          name="message"
+          placeholder="Message"
+          class="contact-form__message"
+        />
+        <input type="submit" value="SEND" class="contact-form__send" />
+      </form>
+    </article>
   </body>
 </html>

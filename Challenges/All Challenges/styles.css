@@ -1,0 +1,71 @@
+:root {
+  --main-color: #221727;
+  --main-font: 'Rubik', sans-serif;
+  --transparent-main-color: rgba(34, 23, 39, 0.8);
+  --dark-shadow: #1f2057;
+  --mint-green: #5ef4d6;
+  --button-hover: #24e5a3;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  padding-bottom: 3rem;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+.main-page__title {
+  font: var(--title-font);
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 6px var(--dark-shadow);
+  color: var(--mint-green);
+}
+header h2 {
+  color: white;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+header a {
+  color: white;
+  padding: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.mintbean-link {
+  font-size: 2rem;
+  color: var(--mint-green);
+  padding: 1rem;
+}
+img {
+  max-width: 80%;
+  align-self: center;
+  padding: 2rem 0rem;
+}
+
+p {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+a:hover {
+  color: violet;
+}
+a:visited {
+  color: lightskyblue;
+}
