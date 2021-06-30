@@ -18,14 +18,12 @@
   box-sizing: border-box;
 }
 body {
-  margin: 1rem;
   height: 100vh;
   font-family: var(--main-font);
   background-color: var(--background-color);
   padding-top: 1rem;
 }
 .contact-wrapper {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -43,11 +41,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
   color: whitesmoke;
   background-color: var(--transparent-main-color);
   border: 2px solid #5ef4d6;
   border-radius: 10px;
+  margin: 1rem;
 }
 .contact-summary__logo {
   width: 40%;
@@ -63,16 +61,14 @@ body {
 .contact-summary__icons {
   display: flex;
   flex-direction: row;
-  width: 65%;
-  justify-content: space-between;
-  padding: 0.75rem;
+  padding: 0.5rem;
   color: var(--mint-green);
 }
 
 .contact-summary__icon {
   height: 3rem;
   width: 3rem;
-  padding: 3px;
+  margin: 0.5rem;
   border: 2px solid var(--large-text-color);
   border-radius: 50%;
 }
@@ -81,8 +77,9 @@ body {
 .contact-form__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 1rem;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  padding: 1rem;
 }
 .contact-form__fields {
   background-color: var(--transparent-main-color);
