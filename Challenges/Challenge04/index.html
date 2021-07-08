@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mintbean Learn-a-bit Challenge 04 - Contact</title>
-    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
@@ -15,9 +15,9 @@
 
   <body>
     <h2 class="contact-title">CONTACT US</h2>
-    <article class="contact-wrapper">
-      <summary class="contact-summary">
-        <img class="contact-summary__logo" src="./images/learnabit-logo.png" />
+    <section class="contact">
+      <article class="contact-summary">
+        <img class="article-logo" src="./images/learnabit-logo.png" />
         <p class="contact-summary__text">
           Have a question about a Learn-a-bit or workshop? Want to speak at one
           of our events or discuss a potential collaboration? Contact us, we'd
@@ -43,7 +43,7 @@
             src="https://img.icons8.com/ios/50/5ef4d6/filled-message.png"
           />
         </div>
-      </summary>
+      </article>
       <form class="contact-form__wrapper">
         <input
           type="text"
@@ -57,14 +57,15 @@
           placeholder="Email"
           class="contact-form__fields"
         />
-        <input
+        <textarea
           type="text"
           name="message"
           placeholder="Message"
-          class="contact-form__message"
-        />
+          class="contact-form__fields contact-form__message"
+        ></textarea>
         <input type="submit" value="SEND" class="contact-form__send" />
       </form>
-    </article>
+    </section>
   </body>
 </html>
+<!-- TODO- streamline class names- too long -->

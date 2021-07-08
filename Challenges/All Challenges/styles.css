@@ -15,9 +15,9 @@
 }
 body {
   margin: 0;
+  padding-bottom: 3rem;
   font-family: var(--main-font);
   background-color: var(--main-color);
-  padding-bottom: 3rem;
 }
 header {
   display: flex;
